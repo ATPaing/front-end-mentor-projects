@@ -1,1 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet"> 
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+  
+    <nav>
+      <div class="logo">
+        <img src="images/logo-bookmark.svg" alt="logo image">
+      </div>
+      <div class="links">
+        <ul>
+          <li>
+            <a href="#">Features</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li class="log-in-btn">
+            <a href="#">Login</a>
+          </li>
+        </ul>     
+      </div>
+      <div class="hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="#242A45" fill-rule="evenodd" d="M0 0h18v3H0V0zm0 6h18v3H0V6zm0 6h18v3H0v-3z"/></svg>
+      </div>
+    </nav>
+       
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-left-infos">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>
+            A clean and simple interface to organize your favourite websites. Open a new 
+            browser tab and see your sites load instantly. Try it for free.
+          </p>
+        </div>
+        <div class="hero-left-buttons">
+          <a class="hero-left-buttons__chrome">Get it on Chrome</a>
+          <a class="hero-left-buttons__firefox">Get it on Firefox</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-img">
+          <img src="images/illustration-hero.svg" alt="hero image">
+        </div>
+      </div>
+    </section>
+
+    <section class="features-and-tabs">
+      <section class="features">
+        <h2>Features</h2>
+        <p>
+          Our aim is to make it quick and easy for you to access your favourite websites. 
+          Your bookmarks sync between your devices so you can access them on the go.
+        </p>
+      </section>
+      <section class="tabs">
+        <div class="tabs-nav">
+          <p class="tab-links active-tab-nav">Simple Bookmarking</p>
+          <p class="tab-links">Speedy Searching</p>
+          <p class="tab-links">Easy Sharing</p>
+        </div>
+        <div class="tab-infos">
+          <div class="tab-infos-left">
+            <div id="tabImg" class="tabs-img">
+              <img src="images/illustration-features-tab-1.svg" alt="feature section tab 1 img">
+            </div>
+          </div>
+          <div class="tab-infos-right">
+            <h3 id="tabInfoH3">Bookmark in one click</h3>
+            <p id="tabInfoP">
+              Organize your bookmarks however you like. Our simple drag-and-drop interface 
+              gives you complete control over how you manage your favourite sites.
+            </p>
+            <a>More Info</a>
+          </div>
+        </div>
+      </section>
+    </section>
+  
+    <section class="download-extension">
+
+      <div class="download-infos">
+        <h3>Download the extension</h3>
+        <p>
+          We've got more browsers in the pipeline. Please do let us know if you've 
+          got a favourite you'd like us to prioritize.
+        </p>
+      </div>
+
+      <div class="download-links">
+               
+        <div class="chrome-extension extensions">
+          <div class="chrome-image download-logo">
+            <img src="images/logo-chrome.svg" alt="chrome image">
+          </div>
+          <div class="chrome-texts download-texts">
+            <p>Add to Chrome</p>
+            <p>Minimum version 62</p>
+          </div>
+          <a href="#">Add & Install Extension</a>
+        </div>
+             
+        <div class="firefox-extension extensions">
+          <div class="firefox-image download-logo">
+            <img src="images/logo-firefox.svg" alt="firefox image">
+          </div>
+          <div class="firefox-texts download-texts">
+            <p>Add to Firefox</p>
+            <p>Minimum version 55</p>
+          </div>
+          <a href="#">Add & Install Extension</a>
+        </div>
+        
+        <div class="opera-extension extensions">
+          <div class="opera-image download-logo">
+            <img src="images/logo-opera.svg" alt="opera image">
+          </div>
+          <div class="opera-texts download-texts">
+            <p>Add to Opera</p>
+            <p>Minimum version 46</p>
+          </div>
+          <a href="#">Add & Install Extension</a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="FAQ">
+
+      <div class="FAQ-title">
+        <h3>Frequently Asked Questions</h3>
+        <p> 
+          Here are some of our FAQs. If you have any other questions you'd like 
+          answered please feel free to email us.
+        </p>
+      </div>
+
+      <div class="FAQ-questions">
+
+          <div class="question-one questions">
+            <div class="question-name">
+              <div class="question-name__first-row">
+                <h4>What is Bookmark?</h4>
+                <div class="expand-button"> 
+                  <img src="images/icon-arrow.svg" alt="expand btn">
+                </div>
+              </div>
+              <div class="answer">
+
+              </div>          
+           </div>
+          </div>
+
+          <div class="question-two questions">
+            <div class="question-name">
+              <div class="question-name__first-row">
+                <h4>How can I request a new browser?</h4>
+                <div class="expand-button"> 
+                  <img src="images/icon-arrow.svg" alt="expand btn">
+                </div>
+              </div>
+              <div class="answer">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="question-three questions">
+            <div class="question-name">
+              <div class="question-name__first-row">
+                <h4>Is there a mobile app?</h4>
+                <div class="expand-button"> 
+                  <img src="images/icon-arrow.svg" class="expand-button-img" alt="expand btn">
+                </div>
+              </div>  
+              <div class="answer">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="question-four questions">
+            <div class="question-name">
+              <div class="question-name__first-row">
+                <h4>What about other Chromium browsers?</h4>
+                <div class="expand-button"> 
+                  <img src="images/icon-arrow.svg" alt="expand btn">
+                </div>
+              </div>  
+              <div class="answer">
+
+              </div>
+           </div>
+        </div>
+
+    </div>
+
+      <div class="more-info-btn">
+        <a href="#">More Info</a>
+      </div>
+
+    </section>
+    
+    <section class="news-letter">
+      <div class="new-letter-infos">
+        <p>35,000+ already joined</p>
+        <p>Stay up-to-date with what we're doing</p>
+      </div>
+
+      <form class="contact-box">
+        <input type="email" placeholder="abc@gmail.com">
+        <div class="contact-us-btn">
+          <input type="submit" value="Contact Us">
+        </div>
+      </form>
+  
+    </section>
+
+    <section class="footer">
+
+      <div class="footer-left">
+        <div class="logo-image">
+          <img src="images/bookmark-clr-changed.svg" alt="bookmark logo">
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li>
+              <a href="#">Features</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="social-media-links ">
+          <div class="facebook-link">
+            <img src="images/icon-facebook.svg" alt="fb logo">
+          </div>
+          <div class="twitter-link">
+            <img src="images/icon-twitter.svg" alt="twitter logo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="mobile-nav">
+      <div class="mobile-nav--first-row">
+        <div class="logo">
+          <svg width="178" height="50" viewBox="0 0 748 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M187.324 28.9754H213.787C217.564 28.9754 221.047 29.6884 224.227 31.119C227.411 32.5496 229.912 34.5 231.74 36.961C233.568 39.422 234.484 42.113 234.484 45.0294C234.484 48.1206 233.649 50.7978 231.978 53.061C230.307 55.3196 228.12 57.0538 225.412 58.2544V58.9444C228.94 60.0852 231.74 61.9022 233.821 64.3954C235.897 66.884 236.94 69.874 236.94 73.3654C236.94 76.7464 235.947 79.7364 233.963 82.34C231.94 84.974 229.161 87.0535 225.928 88.3522C222.561 89.7552 218.825 90.4544 214.729 90.4544H187.324V28.9754ZM212.841 54.0454C215.615 54.0454 217.833 53.3462 219.503 51.9432C221.174 50.5402 222.009 48.7784 222.009 46.6624C222.009 44.6016 221.204 42.872 219.599 41.4644C217.989 40.066 215.863 39.3622 213.22 39.3622H200.082V54.0454H212.841V54.0454ZM214.258 79.8928C217.346 79.8928 219.756 79.1614 221.488 77.7032C223.219 76.245 224.085 74.3406 224.085 71.9946C224.085 69.6486 223.204 67.7304 221.442 66.24C219.675 64.7496 217.154 64.009 213.878 64.009H200.082V79.8928H214.258V79.8928ZM279.705 91.8298C273.088 91.8298 267.089 90.413 261.702 87.5794C256.387 84.8122 251.995 80.791 248.989 75.9414C245.901 71.0194 244.357 65.6098 244.357 59.7126C244.357 53.82 245.901 48.4104 248.989 43.4838C251.994 38.6364 256.384 34.617 261.697 31.8504C267.094 29.0168 273.088 27.6 279.71 27.6C286.322 27.6 292.327 29.0168 297.714 31.8504C303.026 34.6182 307.417 38.6394 310.421 43.4884C313.51 48.4104 315.054 53.82 315.054 59.7126C315.054 65.6098 313.51 71.0194 310.421 75.9414C307.417 80.7904 303.026 84.8115 297.714 87.5794C292.327 90.413 286.322 91.8298 279.71 91.8298H279.705ZM279.705 80.8358C283.706 80.8728 287.648 79.956 291.137 78.177C294.575 76.4277 297.407 73.8402 299.313 70.7066C301.298 67.5004 302.29 63.8342 302.29 59.7126C302.29 55.591 301.298 51.9294 299.313 48.7232C297.407 45.5895 294.575 43.0021 291.137 41.2528C287.648 39.4721 283.707 38.5538 279.705 38.5894C275.716 38.5494 271.786 39.4682 268.314 41.2528C264.897 43.0124 262.084 45.5983 260.188 48.7232C258.203 51.9294 257.211 55.591 257.211 59.7172C257.211 63.8342 258.203 67.5004 260.188 70.7066C262.084 73.8314 264.897 76.4174 268.314 78.177C271.787 79.9599 275.716 80.8771 279.705 80.8358V80.8358ZM357.434 91.8298C350.817 91.8298 344.818 90.413 339.431 87.5794C334.118 84.8115 329.728 80.7904 326.723 75.9414C323.635 71.0194 322.091 65.6098 322.091 59.7126C322.091 53.82 323.635 48.4104 326.718 43.4838C329.725 38.6358 334.117 34.6163 339.431 31.8504C344.818 29.0168 350.822 27.6 357.434 27.6C364.052 27.6 370.051 29.0168 375.438 31.8504C380.751 34.6182 385.141 38.6394 388.145 43.4884C391.234 48.4104 392.778 53.82 392.778 59.7126C392.778 65.6098 391.234 71.0194 388.151 75.9414C385.145 80.791 380.753 84.8122 375.438 87.5794C370.051 90.413 364.046 91.8298 357.434 91.8298V91.8298ZM357.434 80.8358C361.437 80.8736 365.381 79.9568 368.871 78.177C372.308 76.427 375.138 73.8396 377.043 70.7066C379.027 67.5004 380.02 63.8342 380.02 59.7126C380.02 55.591 379.027 51.9294 377.043 48.7232C375.138 45.5901 372.308 43.0028 368.871 41.2528C365.381 39.4713 361.438 38.553 357.434 38.5894C353.445 38.5494 349.516 39.4682 346.043 41.2528C342.626 43.0124 339.814 45.5983 337.917 48.7232C335.933 51.9294 334.94 55.591 334.94 59.7172C334.94 63.8342 335.933 67.5004 337.917 70.7066C339.815 73.8321 342.63 76.418 346.048 78.177C349.52 79.9591 353.448 80.8763 357.434 80.8358V80.8358ZM404.164 28.98H416.922V55.338H417.682L442.439 28.98H457.845V29.6654L433.377 55.0758L460.402 89.769V90.4544H444.808L424.588 64.2666L416.933 72.4224V90.4544H404.174V28.9754L404.164 28.98ZM474.785 27.6H491.229L509.182 70.794H509.942L527.889 27.6H544.429V89.079H531.767V58.7696L532.527 48.553H531.767L514.564 89.079H504.641L487.346 48.553H486.592L487.351 58.7696V89.0836H474.78V27.6H474.785ZM580.092 27.6H594.744L620.164 89.079H606.084L600.414 74.3958H574.518L568.847 89.079H554.768L580.092 27.6ZM596.257 63.7514L590.304 48.2954L587.843 40.9078H587.089L584.633 48.2954L578.583 63.7514H596.252H596.257ZM630.588 27.6H655.254C659.664 27.6 663.588 28.428 667.02 30.0886C670.453 31.7492 673.116 34.0538 675.004 37.0024C676.898 39.9464 677.84 43.286 677.84 47.0074C677.84 50.9542 676.473 54.4594 673.729 57.523C671.02 60.5656 667.439 62.8691 663.38 64.1792L663.289 64.7772L681.434 88.3936V89.0836H666.782L649.3 65.9824H643.347V89.079H630.588V27.6ZM655.158 55.338C658.059 55.338 660.423 54.533 662.246 52.9322C664.074 51.3268 664.99 49.2982 664.99 46.8326C664.99 44.4866 664.119 42.4856 662.388 40.825C660.656 39.1644 658.307 38.3318 655.351 38.3318H643.347V55.3334H655.158V55.338ZM691.762 27.6H704.521V53.958H705.28L730.037 27.6H745.443V28.29L720.965 53.705L748 88.3936V89.0836H732.407L712.175 62.8912L704.521 71.047V89.079H691.762V27.6V27.6Z" fill="#E8EAF6"/>
+            <path d="M63.2851 115C98.2365 115 126.57 89.2564 126.57 57.5C126.57 25.7436 98.2365 0 63.2851 0C28.3337 0 0 25.7436 0 57.5C0 89.2564 28.3337 115 63.2851 115Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M45.5653 41.4V87.4L63.4876 71.576L81.3999 87.4V41.4C81.3999 38.96 80.3331 36.62 78.4341 34.8946C76.5352 33.1693 73.9597 32.2 71.2742 32.2H55.6909C53.0054 32.2 50.4299 33.1693 48.531 34.8946C46.6321 36.62 45.5653 38.96 45.5653 41.4Z" fill="blue"/>
+          </svg>
+        </div>
+        <div class="close-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15"><path fill="#FFF" fill-rule="evenodd" d="M8 5.379L13.303.075l2.122 2.122L10.12 7.5l5.304 5.303-2.122 2.122L8 9.62l-5.303 5.304-2.122-2.122L5.88 7.5.575 2.197 2.697.075 8 5.38z"/></svg>        </div>
+      </div>
+
+
+      <div class="mobile-nav-links">
+        <ul>
+          <li>
+            <a href="#">Features</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li class="mobile-nav-log-in-btn">
+            <a href="#">Login</a>
+          </li>
+        </ul>     
+      </div>
+
+      <div class="mobile-nav-social-media-links ">
+        <div class="facebook-link mobile-nav-social-link">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" ><path fill="#FFF" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+          </a>
+        </div>
+        <div class="twitter-link mobile-nav-social-link">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" ><path fill="#FFF" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+
+</body>
+<script src="main.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
 
