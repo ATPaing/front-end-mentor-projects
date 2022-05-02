@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+   <section class="page-first-row">
+    <div id="menuBtn" class="menu-btn">
+      <img src="images/icon-menu.svg" alt="menu picture">
+    </div>
+    <div class="title-logo">
+      <img src="images/logo.svg" alt="logo picture">
+    </div>
+    <div class="options-in-window-size">
+      <p>Collections</p>
+      <p>Men</p>
+      <p>Women</p>
+      <p>About</p>
+      <p>Contact</p>
+    </div>
+    <div id="cartBtn" class="cart-btn">
+      <p id="cardBtnNoti" class="cart-btn-noti"></p>
+      <img src="images/icon-cart.svg" alt="cart picture">
+
+    </div>
+    <div class="profile">
+      <img src="images/image-avatar.png" alt="avatar picture">
+    </div>
+   </section> 
+
+    <section class="product-section">
+      <div class="product-image">
+        <div id="previousBtn" class="previous-btn">
+          <img src="images/icon-previous.svg" alt="previous btn image">
+        </div>
+        <div class="product-image-previews">
+          <div class="product-big-preview">
+           <img id="productImage" src="images/image-product-1.jpg" alt="product one image">
+          </div>
+          <div class="product-thumb-preview">
+            <div class="thumb1 thumb-image active">
+              <img src="images/image-product-1-thumbnail.jpg" alt="thumb one">
+            </div>
+            <div class="thumb2 thumb-image">
+              <img src="images/image-product-2-thumbnail.jpg" alt="thumb two">
+            </div>
+            <div class="thumb3 thumb-image">
+              <img src="images/image-product-3-thumbnail.jpg" alt="thumb three">
+            </div>
+            <div class="thumb4 thumb-image">
+              <img src="images/image-product-4-thumbnail.jpg" alt="thumb four">
+            </div>
+          </div>
+        </div>
+        <div id="nextBtn" class="next-btn">
+          <img src="images/icon-next.svg" alt="next btn image">
+        </div>
+        <section id="cartDisplay" class="cart-display">
+          <p class="cart-display-title">cart</p>
+          <div id="checkOutSecondRow"  class="check-out-second-row">  
+            <div class="check-out-second-row-first-part">
+              <div class="item-template">
+                <img src="images/image-product-1-thumbnail.jpg" alt="product 1 thumb">
+              </div>
+              <div class="check-out-section">
+                <p class="item-name">Autumn Limited Edition...</p>
+                <div class="toal-price-section">
+                  <p class="discounted-price-check-out">$125.00</p>
+                  <p class="total-number">x<span id="totalNumber"></span></p>
+                  <p class="total-price">$<span id="totalPrice"></span></p>
+                </div>
+              </div>
+              <div id="deleteBtn" class="delete-btn">
+                <img src="images/icon-delete.svg" alt="delete btn">
+              </div>
+            </div>
+            <div id="checkOutBtn" class="check-out-btn">Checkout</div>
+          </div>  
+          <p id="cartDisplayContent" class="cart-display-content">Your cart is empty </p>
+        </section>
+
+      </div>
+      <div class="product-section-second-part">
+        <div class="product-info">
+          <p class="company-name">sneaker company</p>
+          <h1 class="sneaker-title">Fall Limited Edition Sneakers</h1>
+          <p class="sneaker-info">
+            These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they'll withstand everything the weather can offer.
+          </p>
+        </div>
+
+        <section class="add-to-cart-section">
+          <div class="price-info">
+            <div class="price-info-first-row"> 
+             <p class="discounted-price">$125.00</p>
+             <p class="discount-percent">50%</p>
+            </div>
+            <p class="actual-price"><del>$250.00</del></p>
+          </div>
+          <section class="buttons">
+            <div class="number-of-sneakers">
+              <div id="minusBtn" class="minus-btn">
+                <img src="images/icon-minus.svg" alt="minus btn image">
+              </div>
+              <p id="totalNumberOfSneakers" class="total-number-of-sneakers">0</p>
+              <div id="plusBtn" class="plus-btn">
+                <img src="images/icon-plus.svg" alt="plus btn image">
+              </div>
+            </div>
+            <div id="addToCartBtn" class="add-to-cart-btn">
+              <div class="cart-image">
+                <img src="images/icon-cart.svg" alt="cart image">
+              </div>
+              <p class="add-to-card-text">Add to cart</p>
+            </div>
+          </section>
+        </section>
+
+      </div>
+    </section>
+    <section id="menuSection" class="menu-section">
+      <div id="closeBtn" class="close-btn">
+        <img src="images/icon-close.svg" alt="close btn image">
+      </div>
+      <p>Collections</p>
+      <p>Men</p>
+      <p>Women</p>
+      <p>About</p>
+      <p>Contact</p>
+    </section>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Aung Thet Paing</a>.
+    </div>
+  </main>
+
+</body>
+<script src="main.js"></script>
+</html>
