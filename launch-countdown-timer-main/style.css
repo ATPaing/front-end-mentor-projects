@@ -1,0 +1,115 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Text', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    min-height: 100vh;
+    background-image: url('images/bg-stars.svg'),url('images/pattern-hills.svg');
+    background-color: hsl(var(--bg-clr));
+    background-repeat: no-repeat,no-repeat;
+    background-size: cover,contain;
+    background-position: 0 -30vh,bottom;
+}
+:root{
+    --bg-clr: 257 19% 14%;
+    --grayish-blue: 237 18% 59%;
+    --soft-red: 345 95% 68%;
+    --white: 0 0% 100%;
+    --dark-desaturated-blue: 236 21% 26%;
+    --very-dark-blue: 235 16% 14%;
+    --mostly-black-blue: 234 17% 12%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    pointer-events: none;
+}
+main > p:first-child{
+    color: hsl(var(--white));
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: clamp(1rem,3vw,2rem);
+    margin-bottom: 2em;
+}
+.holder{
+    display: flex;
+    gap: clamp(1em,2vw,5em);
+}
+.date-holder{
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.date-holder > p{
+    color: hsl(var(--grayish-blue));
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+.counter{
+    position: relative;
+    padding: clamp(1.2em,5vw,2em);
+    background-color: hsl(var(--dark-desaturated-blue));
+    border-radius: 15px;
+    box-shadow: 0 10px 8px 3px hsl(var(--mostly-black-blue));
+}
+
+
+.counter::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: hsl(var(--very-dark-blue) / .5);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.counter p{
+    position: relative;
+   font-size: clamp(2rem,5vw,5rem);     
+   color: hsl(var(--soft-red));
+   text-shadow: 3px 3px black;
+}
+.counter p::before,.counter p::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: hsl(var(--mostly-black-blue));
+}
+.counter p::before{
+    top: 50%;
+    left: -.5em;
+    transform: translateY(-50%);
+    border-radius: 0 5px 5px 0;
+}
+.counter p::after{
+    top: 50%;
+    right: -.5em;
+    transform: translateY(-50%);
+    border-radius: 5px 0 0 5px;
+}
+footer{
+    display: flex;
+    gap: 3em;
+}
+footer i{
+    color: hsl(var(--grayish-blue));
+    font-size: 2rem;
+    cursor: pointer;
+}
+footer i:hover{
+    color: hsl(var(--soft-red));
+}
