@@ -27,7 +27,8 @@ body{
     color: hsl(229, 31%, 21%);
     overflow-x: hidden;
 }
-.wrapper{
+main{
+    position: relative;
     min-height: 100vh;
     overflow-x: hidden;
 }
