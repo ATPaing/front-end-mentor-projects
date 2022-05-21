@@ -27,8 +27,9 @@ body{
     color: hsl(229, 31%, 21%);
     overflow-x: hidden;
 }
-main{
+.wrapper{
     min-height: 100vh;
+    overflow-x: hidden;
 }
 img{
     display: block;
@@ -124,7 +125,6 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 1em;
-    /* margin-top: -4.5em; */
 }
 @media (max-width: 610px) {
     .hero-left{
@@ -222,7 +222,6 @@ nav{
     margin: 0 auto;
 }
 .features h2{
-    /* font-size: var(--font-size-heading); */
     color: black;
     margin-block-end: 1em;
 }
@@ -306,13 +305,13 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 1em;
     width: 35%;
     margin-right: 1.3em;
 }
 @media (max-width: 610px) {
     .tab-infos-right{
+        align-items: center;
         width: 60%;
         margin-inline: auto ;
         margin-top: 85px;
@@ -325,6 +324,11 @@ nav{
 .tab-infos-right p{
     line-height: 1.6;
     font-size: var(--font-size-text);
+}
+@media (max-width: 610px) {
+    .tab-infos-right p{
+        text-align: center;
+    }
 }
 .tab-infos-right a{
     background-color: hsl(var(--secondary-clr-blue));
@@ -340,7 +344,7 @@ nav{
     border-color: hsl(var(--secondary-clr-blue));
     color: hsl(var(--secondary-clr-blue));
 }
-/* download extensio section */
+/* download extension section */
 .download-extension{
     display: flex;
     flex-direction: column;
@@ -456,7 +460,11 @@ nav{
     gap: 4em;
     color: hsl(var(--secondary-clr-gb))
 }
-
+@media (max-width : 400px) {
+    .FAQ{
+        width: 100%;
+    }
+}
 .FAQ-title{
     display: flex;
     flex-direction: column;
@@ -591,9 +599,20 @@ nav{
     width: 50%;
     margin: 0 auto;
 }
+@media (max-width: 938px) {
+    .contact-box{
+        width: 70%;
+    }
+}
+@media (max-width: 500px) {
+    .contact-box{
+        width: 90%;
+    }
+}
 input[type="email"]{
- height: 55px;
- font-size: 1rem;
+ width: 60%;
+ height: 45px;
+ font-size: clamp(0.8rem,3vw,1rem);
  padding: var(--button-default-padding);
  border: none;
  border-radius: 5px;
@@ -601,14 +620,18 @@ input[type="email"]{
 input[type="email"]:focus{
     outline: none;
 }
+.contact-us-btn{
+    height: 45px;
+}
 input[type="submit"]{ 
+    height: 100%;
     border: 2px solid transparent;
     border-radius: 5px;
-    font-size: 1.05rem;
+    font-size: clamp(0.8rem,3vw,1rem);
     font-weight: bold;
     background-color: hsl(var(--primary-clr-sr));
     color: white;
-    padding: 1em 2em;
+    padding-inline: 1em;
     cursor: pointer;
 }
 input[type="submit"]:hover{
@@ -621,7 +644,6 @@ input[type="submit"]:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
     background-color: hsl(var(--secondary-clr-vdb));
     padding: 2em 10%;
 }
